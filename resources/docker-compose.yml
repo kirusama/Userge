@@ -8,7 +8,7 @@ services:
         - mongo
       restart: on-failure
       environment:
-          DATABASE_URL: mongodb://root:example@mongo
+          DATABASE_URL: mongodb+srv://kiru:kiru@cluster0.ifzhm.mongodb.net/test?retryWrites=true&w=majority
       env_file:
         - config.env
 
